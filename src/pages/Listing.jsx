@@ -29,7 +29,6 @@ const Listing = () => {
 				setLoading(false)
 			}
 		}
-		console.log(listing)
 		fetchListing()
 	}, [navigate, params.listingId])
 
@@ -39,9 +38,7 @@ const Listing = () => {
 
 	return (
 		<main>
-			<Swiper slidesPerView={1}
-				onSlideChange={() => console.log('slide change')}
-				onSwiper={(swiper) => console.log(swiper)}>
+			<Swiper slidesPerView={1}>
 				<SwiperSlide >
 					<div className="swiperSlideDiv" style={{
 						background: `url(${listing.imgUrls[0]}) center no-repeat`,

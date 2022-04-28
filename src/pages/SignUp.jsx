@@ -45,7 +45,6 @@ const SignUp = () => {
       await  setDoc(doc(db, 'users', user.uid), formDataCopy)
       navigate('/')
     } catch (error) {
-      console.log(error);
       toast.error('Error')
     }
   }

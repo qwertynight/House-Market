@@ -46,7 +46,7 @@ const  Slider =() => {
                         backgroundSize: 'cover',
                         }}>
                            <p className="swiperSlideText">{data.name}</p>
-                           <p className="swiperSildePrice">${data.discountedPrice ?? data.regularPrice}
+                           <p className="swiperSlidePrice">${data.discountedPrice ?? data.regularPrice}
                            {data.type === 'rent' && '/ month'}</p>
                        </div>
                    </SwiperSlide>

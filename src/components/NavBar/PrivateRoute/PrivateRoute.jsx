@@ -4,7 +4,6 @@ import Spinner from "../../Spinner/Spinner";
 
 const PrivateRoute = () => {
     const {loggedIn, checkingStatus } = useAuthStatus()
-    console.log(loggedIn);
 
     if (checkingStatus) {
         return <Spinner />
