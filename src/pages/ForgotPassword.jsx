@@ -8,8 +8,6 @@ import { ReactComponent as ArrowRightIcon} from '../assets/svg/keyboardArrowRigh
 const ForgotPassword = () =>  {
   const [email, setEmail] = useState()
 
-
-  
   const onChange = (e) => {
     setEmail(e.target.value)
   }
